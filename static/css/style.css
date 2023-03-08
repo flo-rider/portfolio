@@ -33,7 +33,7 @@ h6,
 }
 
 .site-section {
-  padding: 1rem 0;
+  padding: 1rem 0
 }
 
 .filters a {
@@ -531,7 +531,7 @@ h6,
   color: #000;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 1080px) {
   .custom-navbar > .container {
     padding-right: 0;
     padding-left: 0;
