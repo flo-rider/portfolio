@@ -1,9 +1,14 @@
 import bs4
+import sys
 
-def add_bee_favicon(path="existing_file.html"):
-# load the file
-    with open(path, 'r', encoding='utf-8') as inf:
-        txt = inf.read()
+html_path = sys.argv[1]
+new_title = sys.argv[2]
+
+
+def add_bee_favicon(path):
+    # load the file
+    with open(path, 'r', encoding='utf-8') as input_file:
+        txt = input_file.read()
         soup = bs4.BeautifulSoup(txt)
         print(type(soup))
         # create new link
@@ -13,22 +18,22 @@ def add_bee_favicon(path="existing_file.html"):
         # soup.append(new_link)
 
     # save the file again
-    with open(path, "w", encoding='utf-8') as outf:
-        outf.write(str(soup))
+    with open(path, "w", encoding='utf-8') as output_file:
+        output_file.write(str(soup))
 
 
-# add_bee_favicon('airbnbEU/airbnbEU.html')
-def change_title(path, new_title):
+def change_title(path, title):
     with open(path, 'r', encoding='utf-8') as inf:
         txt = inf.read()
         soup = bs4.BeautifulSoup(txt)
         # find the title tag using `find` method
         title_tag = soup.find('title')
         # change the text of the title tag `string` property
-        title_tag.string = new_title
+        title_tag.string = title
 
     with open(path, "w", encoding='utf-8') as outf:
         outf.write(str(soup))
 
 
-# change_title('airbnbEU/airbnbEU.html', 'Pricing airbnb')
+add_bee_favicon(html_path)
+change_title(html_path, new_title)
