@@ -12,7 +12,7 @@ def add_bee_favicon(path):
         soup = bs4.BeautifulSoup(txt)
         print(type(soup))
         # create new link
-        new_link = soup.new_tag("link", rel="icon", href="static/img/favicon-bee.ico")
+        new_link = soup.new_tag("link", rel="icon", href="/static/img/favicon-bee.ico")
         # insert it into the document
         soup.head.append(new_link)
         # soup.append(new_link)
@@ -36,4 +36,4 @@ def change_title(path, title):
 
 
 add_bee_favicon(html_path)
-change_title(html_path, new_title)
+# change_title(html_path, new_title)
