@@ -16,10 +16,11 @@ body {
 
 a {
   color: #777;
+
 }
 
 a:hover {
-  color: #000;
+  color: #000
 }
 
 h1,
@@ -30,14 +31,45 @@ h5,
 h6,
 .font-heading {
   font-family: "Raleway", sans-serif;
-  font-size: 25px
-  font-size: 25px
+  font-size: 20px;
+  line-height: 1.5;
+    }
 }
 
 .site-section {
   padding: 1rem 0
 }
 
+.site-section h2 {
+  font-size: 25px;
+  line-height: 1.2;
+  letter-spacing: 0rem;
+  font-weight: none;
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+}
+.site-section p {
+  font-size: 18px;
+  text-indent: 20px;
+  line-height: 1.2;
+  letter-spacing: 0rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.site-portfolio h2 {
+  font-size: 25px;
+  line-height: 1.2;
+  letter-spacing: 0rem;
+  font-weight: none;
+  margin-bottom: 0.5rem;
+}
+.site-portfolio p {
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0rem;
+  margin-bottom: 1rem;
+}
 .filters a {
   color: #000;
   display: inline-block;
@@ -123,14 +155,18 @@ h6,
 }
 
 .item .item-wrap > .work-info h3 {
-  font-size: 20px;
-  margin-bottom: 0;
+  font-size: 25px;
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .item .item-wrap > .work-info span {
-  font-size: 14px;
+  font-size: 20px;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: .1rem;
+  font-weight: none
 }
 
 .item .item-wrap:hover {
@@ -183,7 +219,7 @@ h6,
 }
 
 .heading {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .readmore {
@@ -417,7 +453,7 @@ h6,
 }
 
 .custom-navbar .navbar-brand {
-  font-size: 1.7rem;
+  font-size: 2.5rem;
 }
 
 /* Burger */
@@ -507,6 +543,10 @@ h6,
 
 .footer a {
   color: #000;
+}
+.footer p {
+  color: #000;
+  margin-top: 50px
 }
 
 .social a {

@@ -1,6 +1,9 @@
 import bs4
 import sys
 
+'''run this in terminal first: 
+jupyter nbconvert --to html --TagRemovePreprocessor.remove_cell_tags 'hide_code' pokemon/clustering.ipynb'''
+
 html_path = sys.argv[1]
 new_title = sys.argv[2]
 
